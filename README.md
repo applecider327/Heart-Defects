@@ -8,8 +8,7 @@ For instance, a text piece with the title "Case Report: Fallot's Tetralogy" alre
 There are two types of key features the system looks for - keywords and key descriptions. The former refers to all accepted names of cogenital heart defects and the latter their respective descriptions that uniquely identify each of them. For instance, for the term "Coarctation of the Aorta" the key text patterns to look out for would be something like "cogenital defect where the aorta is narrow" or its similar variations. 
 
 As of now the system is ready for individual classification not yet for massive scale of text sets. Updates to be coming soon. 
-
-Every part has been written in the Python programming language. All the data can be found here: https://www.nlm.nih.gov/databases/download/mesh.html / https://pubmed.ncbi.nlm.nih.gov
+Written in the Python programming language. 
 
 
 
