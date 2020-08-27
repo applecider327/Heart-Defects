@@ -103,7 +103,7 @@ Length: 600, dtype: object
 
 
 # Helper Function 3
-# what it does: takes use of the 'd' dictionary object (found in the 'dictionary' file). accepts a string and see what head term is it associated with.
+# what it does: takes use of the 'd' dictionary object (found in the 'dictionary.py' file). accepts a string and see what head term is it associated with.
 
 def which_cat(string):
     for key in d:
