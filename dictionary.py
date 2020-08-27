@@ -1,4 +1,4 @@
-A Python dictionary object that maps all "head terms" for cogenital heart defects to their respective entry terms.
+# A Python dictionary object that maps all "head terms" for cogenital heart defects to their respective entry terms.
 
 d = {'DiGeorge Syndrome': ['DiGeorge Syndrome',
   'Velocardiofacial Syndrome',
