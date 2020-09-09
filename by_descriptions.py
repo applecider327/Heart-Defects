@@ -2,7 +2,7 @@
 
 # Helper Function 1
 # what it does: identify the heart defect type in question given a sentence of its description. takes use of description_patterns (refer to description_patterns.py)
-# and search_id_k from fetching_terms_and_descriptions.
+# and search_id_k from fetching_terms_and_descriptions. 
 
 def describes_what(sent):
     n = [description_patterns.index(each) for each in description_patterns if len(re.findall(str(each[0]), sent)) != 0]
@@ -21,7 +21,8 @@ def describes_what(sent):
 # "Anomalous Left Coronary Artery"
 
 # Main Function
-# what it does: basically an extension of describes_what; takes in a paragraph and looks at every sentence for the right description patterns and returns all match
+# what it does: basically an extension of describes_what; takes in a paragraph and looks at every sentence for the right description patterns and returns all match.
+# note: any description that spans over two or more sentences won't be detected.
 
 def by_description(text):
     series = pd.Series(nltk.sent_tokenize(text.lower()))
