@@ -7,8 +7,8 @@ For instance, a text piece with the title "Case Report: Fallot's Tetralogy" alre
 
 There are two types of key features the system looks for - keywords and key descriptions. The former refers to all accepted names of congenital heart defects and the latter their respective descriptions that uniquely identify each of them. For instance, for the term "Coarctation of the Aorta" the key text patterns to look out for would be something like "congenital defect where the aorta is narrow" or its similar variations. 
 
-As of now the system is ready for individual classification not yet for massive scale of text sets. Updates to be coming soon. 
-Written in the Python programming language. 
+To build one on your own computer, read the files in the following order: fetching_terms_and_descriptions -> dictionary.py -> by_keywords.py -> description_patterns.py -> by_descriptions.py -> main.py
+
 
 
 
