@@ -1,4 +1,4 @@
-# NLP-Cogenital-Heart-Defects
+# NLP-Congenital-Heart-Defects
 
 NLP (Natural Language Processing) project of developing a system to automatically identify which type of cogenital heart disease is being described in a relevant text (such as in a medical case report). 
 
