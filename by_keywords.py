@@ -122,7 +122,10 @@ def which_cat(string):
 # implicit cases.
 
 def by_keywords(text):
-    return all_possible(text).apply(which_cat).value_counts()
+    if len(all_possible(text).apply(which_cat).value_counts()) > 0:
+        return all_possible(text).apply(which_cat).value_counts()
+    else:
+        return pd.Series([0], index = ["Nothing"])
   
 # Example 1
 # by_keywords("Case report: Andersen Syndrome")
