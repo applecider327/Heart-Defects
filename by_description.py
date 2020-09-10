@@ -26,7 +26,10 @@ def describes_what(sent):
 
 def by_description(text):
     series = pd.Series(nltk.sent_tokenize(text.lower()))
-    return series.apply(describes_what).value_counts()
+    if len(series.apply(describes_what).value_counts()) > 0:
+        return series.apply(describes_what).value_counts()
+    else:
+        return pd.Series([0], index = ["Nothing"])
 
 # Example 1
 # by_description("We introduce a newborn with duplication of one of the chromosome 18s. There also seems to be a hole in the septum that usually separates the two lower chambers of a heart.")
