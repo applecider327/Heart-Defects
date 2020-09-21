@@ -1,5 +1,5 @@
 # Regular expression patterns to uniquely identify their respective heart defect types. These are subject to changes. 
-# They are ordered in the same way the "d" dictionary object is.
+# Ordered in the same way the "d" dictionary object is.
 
 description_patterns = 
 [['chromosome 22 (?:.+)? (?:delet|miss)'],

@@ -117,4 +117,4 @@ The following are instructions as to how to read in a file in ASCII format and n
    
    This takes some time. 
    
-   Alternatively, you can simply copy off from the file "dictionary" in the repository.
+   Alternatively, you can simply copy off from the file "dictionary.py" in the repository.
