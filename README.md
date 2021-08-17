@@ -18,4 +18,4 @@ Now this is the usual way. Python's NLTK offers a number of text classification 
 
 Unfortunately, preparing a large, organised training set is technologically unfeasible and highly time-consuming, so training a built-in classification model is not to be covered here. Instead, a feature extraction function is given in feature_extraction.py..
 
-To get started, read in the files in the following order: data_extraction -> dictionary.py -> by_keywords.py -> description_patterns.py -> by_descriptions.py -> guesswork_algorithm.py
+To get started, read in the files in the following order: data_extraction -> dictionary.py (optional if completing the data extraction process to the end) -> by_keywords.py -> description_patterns.py -> by_descriptions.py -> guesswork_algorithm.py
