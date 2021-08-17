@@ -91,7 +91,7 @@ The following are instructions as to how to read in a file in ASCII format and n
     GHT VENTRICULAR HYPERTROPHY; and a dextro-positioned AORTA. In this condition, blood from both ventricles (oxygen-rich and oxygen-poor) is pumped into the body often causing CYANOSIS.\nCATSH = 
     CAT LIST\nMR = 20120703\nDA = 19990101\nDC = 1\nDX = 19660101\nUI = D013771"]
  
-6. Great. But fishing all the entry terms (basically A.K.A's) out of them seem very cumbersome. So define another function for that:
+6. Great. But fishing all the entry terms (other known names) out of them seems very cumbersome. So define another function for that:
 
    def search_id_k(uid):
      head = re.findall(r'(?<=\nMH = )[^\n]+(?=\n)', " ".join(search_id(uid)))
