@@ -6,9 +6,11 @@ The idea is simple. A text is divided into two parts, the title and the body. Fo
 
 These key features are then utilised to come up with the final decision. Now there are two ways for this:
 
+
 **Guesswork-derived algorithm** 
 
 In this case the key features are fed to an algorithm that I've personally designed. Common sense tells you that the title is the most important piece of information to determine what a text is going to be about, and that is the key idea of the algorithm.
+
 
 **ML-derived algorithm**
 
