@@ -1,8 +1,6 @@
-# For mass classification.
+# Here the idea is to train a model with an organised training set, which should look something like the following:
 
-# As mentioned, the idea is to train a model with an appropriate train set. The train set should look like this:
-
-feature_set = 
+train_set = 
 [({'title_keyword': 'Alagille Syndrome',
    'title_description': 'Nothing',
    'body_keyword': 'Alagille Syndrome',
@@ -19,8 +17,13 @@ feature_set =
    'body_description': 'Nothing'},
   'Romano-Ward Syndrome')]
 
-# It is a list of tuples, each of which is of a form (dictionary_of_features, label). To create one we'll need to start with a list of raw texts
-# that look like the following:
+# It is a list of tuples, each of which is of a form (dictionary of features, label). The task of mapping a label to each text piece in a massive scale 
+# cannot be done automatically, and this is why preparing a training set of Y's and X's is unfeasible. There is a way to extract features (the X's) automatically,
+# though, and below is all about that.
+
+
+
+# Start with a list of raw texts that look like the following:
 
 set_of_texts = 
 ["title_here. body_sentence1_here. body_sentence2_here. body_sentence3_here.",
@@ -31,18 +34,11 @@ set_of_texts =
 
 f_series = pd.Series(set_of_texts).apply(key_features)
 
-# results in
+# gives the following feature set:
 
 0   {'title_keyword': 'Alagille Syndrome', 'title_...
 1   {'title_keyword': 'Tetralogy of Fallot', 'title_...
 2   {'title_keyword': 'Nothing', 'title_...
-
-# so that the following line of code 
-
-[pair for pair in zip(list(f_series), ["Alagille Syndrome", "Tetralogy of Fallot", "Romano-Ward Syndrome"])]
-
-# gives the feature_set.
-
 
 # Below is the key_features function:
 
@@ -61,4 +57,3 @@ def key_features(text):
        features["body_description"] = "Nothing"
                
     return features
-
