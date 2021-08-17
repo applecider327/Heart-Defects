@@ -14,7 +14,7 @@ In this case the key features are fed to an algorithm that I've personally desig
 
 Now this is the usual way. Python's NLTK offers a number of text classification algorithms. The idea is to train one of them (say, Naive Bayes Classifier) by feeding it an organised training set. The ML algorithm 'learns' from the dataset to determine which features are important.
 
-Unfortunately, preparing a large, organised training set is technologically demanding and highly time-consuming, so training a built-in classification model is not to be covered here.
+Unfortunately, preparing a large, organised training set is technologically demanding and highly time-consuming, so training a built-in classification model is not to be covered here. 
 
 creating such feature set of sufficient size is very cumbersome and not so feasible, and therefore training one is not covered here. There is, however, a feature extracting function and instructions as to how to train a nltk classification model on your own with the right dataset. Refer to mass_classification.py for details.
 
