@@ -1,4 +1,4 @@
-# Regular expression patterns to uniquely identify their respective heart defect types. These are subject to changes. 
+# Regular expression patterns to uniquely identify their respective heart defect types.  
 # Ordered in the same way the "d" dictionary object is.
 
 description_patterns = 
