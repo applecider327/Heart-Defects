@@ -1,4 +1,4 @@
-# For single text classification.
+# Guesswork-derived algorithm.
 
 # Accepts a string object of at least one sentence. The first sentence is deemed as the title part and the rest, if any, are all considered to be the body part. 
 # The first sentence must be followed by a full stop (.). See below for details.
