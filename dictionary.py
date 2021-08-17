@@ -1,4 +1,6 @@
-# A Python dictionary object that maps all "head terms" for cogenital heart defects to their respective entry terms.
+# A Python dictionary object that maps all cogenital heart defect terms to their respective entry terms. 
+# For example, 'DiGeorge Syndrome' is also known as '22q11.2 Deletion Syndrome', 'Conotruncal Anomaly Face Syndrome', etc.
+# This is the result of the last step from the file 'extracting_data'.
 
 d = {'DiGeorge Syndrome': ['DiGeorge Syndrome',
   'Velocardiofacial Syndrome',
