@@ -1,6 +1,6 @@
 **Introduction**
 
-This is an NLP (Natural Language Processing) project for automatically identifying which type of congenital heart defect is being described in a text such as a medical case report. This is a strategy for document classification. Given a set of case reports, we would like to be able to determine which reports involve instances of known or newly diagnosed congenital heart defects. We may then determine if other aspects of case presentation vary based on correlation with specific defects.
+This is an NLP project for automatically identifying which type of congenital heart defect is being described in a text such as a medical case report. This is a strategy for document classification. Given a set of case reports, we would like to be able to identiy the reports that involve instances of known congenital heart defects.
 
 **Single text classification**
 
